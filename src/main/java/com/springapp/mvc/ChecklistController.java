@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping("/")
-public class HelloController {
+public class ChecklistController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
-		model.addAttribute("message", "Hello world!");
-		return "hello";
+		model.addAttribute("message", "My checklist");
+		return "checklist";
 	}
 }
