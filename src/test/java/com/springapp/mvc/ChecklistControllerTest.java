@@ -63,7 +63,7 @@ public class ChecklistControllerTest {
 
     @Test
     public void shouldDisplayTheAddChecklistPage() {
-        String expectedPage = checklistController.addItems(model,checklist);
+        String expectedPage = checklistController.addItems();
 
         assertThat(expectedPage, is("checklistAdd"));
     }

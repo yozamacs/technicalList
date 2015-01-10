@@ -30,7 +30,7 @@ public class ChecklistController {
 	}
 
     @RequestMapping(method = RequestMethod.GET, value="/checklistAdd")
-    public String addItems(Model model, @ModelAttribute Checklist checklist) {
+    public String addItems() {
         return "checklistAdd";
     }
 
