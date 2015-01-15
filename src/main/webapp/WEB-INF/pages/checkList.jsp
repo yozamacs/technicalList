@@ -3,20 +3,33 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <html>
+<head>
+<title> Checklist </title>
+ <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet"  type="text/css" />
+ <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet" type="text/css" />
+ </head>
 <body>
-	<h1>${message}</h1>
-    <table>
+    <div class="span6">
+	<h1 class="cntr">${message}</h1>
+	</div>
+	 <div class="container">
+    <table class="table table-hover">
     <thead>
     <tr><td>Title</td>
     <td>Description</td></tr>
-    <thead>
+    </thead>
+    <tbody>
     <c:forEach var="item" items="${checklistItems}">
            <tr><td>${item.itemTitle}</td>
            <td>${item.itemDescription}</td></tr>
     </c:forEach>
+    </tbody>
     </table>
     <br>
-    <a href="checklistAdd" id="addItem">Add a Checklist Item</a>
+    <div class="cntr">
+    <a class="btn btn-default" href="checklistAdd" role="button">Add a Checklist Item</a>
+    </div>
+    </div>
 
 </body>
 </html>
