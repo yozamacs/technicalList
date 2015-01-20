@@ -11,6 +11,10 @@ import java.util.List;
 
 @Repository
 public interface ChecklistMapper {
+
+    @Insert("create table if not exists checklist (name integer)")
+    public void createTable();
+
     @Insert(
             "INSERT INTO checklist(itemcompleted,itemdescription,itemtitle) VALUES (#{itemCompleted},#{itemDescription},#{itemTitle})"
     )
