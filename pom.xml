@@ -144,7 +144,7 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>com.github.yozamacs</groupId>
+                                    <groupId>com.github.jsimone</groupId>
                                     <artifactId>webapp-runner</artifactId>
                                     <version>7.0.57.1</version>
                                     <destFileName>webapp-runner.jar</destFileName>
