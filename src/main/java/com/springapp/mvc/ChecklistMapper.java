@@ -12,7 +12,10 @@ import java.util.List;
 @Repository
 public interface ChecklistMapper {
 
-    @Insert("create table if not exists checklist (name integer)")
+    @Insert("create table if not exists checklist ( itemcompleted boolean not null default false," +
+            "itemdescription character varying not null," +
+            "itemtitle character varying not null)"
+    )
     public void createTable();
 
     @Insert(

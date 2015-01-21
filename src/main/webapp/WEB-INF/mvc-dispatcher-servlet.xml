@@ -28,13 +28,6 @@
         <constructor-arg index="0" ref="sqlSessionFactory" />
     </bean>
 
-    <!--<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
-        <!--<property name="driverClassName" value="org.postgresql.Driver" />-->
-        <!--<property name="url" value="jdbc:postgresql://localhost:5432/checklist" />-->
-        <!--<property name="username" value="maryumstyles" />-->
-        <!--<property name="password" value="" />-->
-    <!--</bean>-->
-
     <bean class="java.net.URI" id="dbUrl">
         <constructor-arg value="#{systemEnvironment['DATABASE_URL']}"/>
     </bean>
