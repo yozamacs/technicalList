@@ -21,7 +21,7 @@ public class ChecklistController {
     @ModelAttribute("checklist")
     public Checklist getChecklist() {return new Checklist(); }
 
-	@RequestMapping(method = RequestMethod.GET, value="/")
+	@RequestMapping(method = RequestMethod.GET, value="/checklist")
 	public String displayItems(Model model) {
 		model.addAttribute("message", "My checklist");
         List<Checklist> checklistItems  = checklistService.getChecklistItems();

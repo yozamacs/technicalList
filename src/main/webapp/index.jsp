@@ -15,7 +15,7 @@
    				<h1>Welcome to The Checklist</h1>
    				<p>To get started, Please hit start!</p>
    			</div>
-        <a class="btn btn-primary" href="/">Start!</a>
+        <a class="btn btn-primary" href="checklist.html">Start!</a>
    		</div>
 
    <div>
