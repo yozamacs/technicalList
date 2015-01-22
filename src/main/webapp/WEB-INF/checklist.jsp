@@ -27,7 +27,7 @@
     </table>
     <br>
     <div class="cntr">
-    <a class="btn btn-default" href="checklistAdd" role="button">Add a Checklist Item</a>
+    <a class="btn btn-default" href="checklistAdd.html" role="button">Add a Checklist Item</a>
     </div>
     </div>
 
