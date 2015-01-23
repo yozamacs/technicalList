@@ -247,7 +247,7 @@ thead tr th {
 }
 
 table.scroll tbody {
-    height: 100px;
+    height: 350px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -262,4 +262,8 @@ tbody td, thead th {
 
 tbody td:last-child, thead th:last-child {
     border-right: none;
+}
+
+.h1 {
+    padding: 5px;
 }
