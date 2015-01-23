@@ -231,7 +231,7 @@ border-bottom: 0;
 /* Table Design Styles*/
 
 table.scroll {
-    /* width: 100%; */ /* Optional */
+    width: 100%;
     /* border-collapse: collapse; */
     border-spacing: 0;
     border: 2px solid black;
@@ -255,7 +255,7 @@ table.scroll tbody {
 tbody { border-top: 2px solid black; }
 
 tbody td, thead th {
-    /* width: 20%; */ /* Optional */
+    width: 20%; */
     border-right: 1px solid black;
     /* white-space: nowrap; */
 }
